@@ -68,6 +68,6 @@ export default class Scene extends Component<SceneProps & React.HTMLAttributes<H
       opts.height = height;
     }
 
-    return <canvas {...opts} ref={this.onCanvasLoaded} />;
+    return <canvas {...opts} style={{ height: "100%", width: "100%" }} ref={this.onCanvasLoaded} />;
   }
 }
